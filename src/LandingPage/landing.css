@@ -1,0 +1,90 @@
+.mainimg{
+    width:100%;
+    height:48rem;
+}
+.MainText
+{
+    position: relative;
+    width: fit-content;
+     /* top: -20rem; */
+    /* left: 33rem;  */
+    color: whitesmoke;
+}
+.maintextp{
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    border: white solid 2px;
+    /* width: 75%; */
+    /* align-self: center; */
+    top:-20rem;
+}
+.nameof{
+    color: #ca6c19;
+    font-weight: bolder;
+}
+.mainText2{
+    width: fit-content;
+    user-select: none;
+    color: black;
+    font-weight: bolder;
+    position: relative;
+    /* top: -20rem; */
+    /* left: 21rem; */
+}
+.offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+.specialities{
+    display: flex;
+    justify-content:space-between;
+    align-items: center ;
+    width: 48rem;
+    flex-direction: row;
+    margin-top: 4rem;
+}
+
+.s1{
+    /* border: black solid; */
+    height: 16rem;
+    width: 15rem; 
+    display: flex;
+    /* align-self: center; */
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+
+}
+.s1logo{
+
+    width: 10rem;
+    height: 10rem;
+    
+}
+.s1text{
+    opacity: 0;
+    transition:opacity 0.3s ease-in-out;
+    font-weight: lighter;
+    
+
+}
+
+.s1:hover .s1text{
+    
+    opacity:1;
+
+}
+.s1:hover{
+    transform: scale(1.1);
+    border:gray solid 1px;
+    border-radius: 1rem;
+    box-shadow: gray;
+
+}
