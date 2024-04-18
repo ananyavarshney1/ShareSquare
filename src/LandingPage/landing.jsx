@@ -1,6 +1,7 @@
 import React from 'react';
 import './landing.css'
 import BootstrapCarousel from './carousel';
+import { faCouch, faTv, faLaptop, faDumbbell, faBicycle } from '@fortawesome/free-solid-svg-icons';
 const Landing = () => {
     return (
         <>
@@ -31,7 +32,7 @@ const Landing = () => {
         </div>
 
         <div>
-            
+
         </div>
         </>
     );

@@ -100,6 +100,7 @@
     user-select: none;
     cursor: pointer;
     border-bottom:gray solid;
+    
 }
 /* .navbar1:hover{
     color:#d1690e;
@@ -109,6 +110,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+    text-decoration: none;
 }
 
 .profile{

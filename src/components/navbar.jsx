@@ -19,13 +19,15 @@ function Navbar() {
             <div className="navbar1">
                 <div className="home1">
                     <NavLink to="/home"><div className="home">Home</div></NavLink>
-                    <div className="home">Post your Property</div>
+                    <NavLink to ="/"><div className="home">Post your Property</div></NavLink>
                     <div className="home"> About Us</div>
                 </div>
-                <div className="profilemain">
+                <NavLink to="/account">
+                    <div className="profilemain">
                     <div className="profile"> <button><img src="src\assets\user.png" alt="" className="user" /></button></div>
 
-                </div>
+                    </div>
+                    </NavLink> 
             </div>
         </>
     )
