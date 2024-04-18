@@ -12,6 +12,10 @@
     justify-content: space-between;
 
 }
+.s{
+    color: #ca6c19;
+    font-weight: bolder;
+}
 .part2{
     display: flex;
     justify-content: center;
@@ -26,6 +30,7 @@
 }
 .name{
     margin-left:2rem;
+    
 }
 .login {
     position:relative;

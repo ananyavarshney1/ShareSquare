@@ -8,7 +8,7 @@ function Navbar() {
             <div className="navbar">
                 <div className="part1">
                     <div className="logo"><img src="#" alt="" />   </div>
-                    <div className="name "><h2>ShareSquare</h2></div>
+                    <div className="name "><h2><span className="s">S</span>hare<span className="s">S</span>quare</h2></div>
                 </div>
                 <div className="part2">
                     <div className="login"><img src="src\assets\login.png" alt="" className="logoimg" /> Login</div>

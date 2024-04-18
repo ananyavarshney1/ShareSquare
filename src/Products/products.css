@@ -1,0 +1,38 @@
+.op{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem   ;
+    margin-bottom: 10px;
+}
+/* .products{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+} */
+
+.equipImg {
+    width: 20rem;
+    height: 15rem;
+    background-color: rgba(36,42,53,.5);
+    filter: brightness(60%);
+    border-radius: 4px;
+    opacity: 0.92;
+}
+
+.equipImg:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+
+.equipTitle {
+    position: relative;
+    top:3rem ;
+    left: 10px;
+    color: white;
+    z-index: 999;
+    font-weight: 700;
+    font-size: 22px;
+
+}
