@@ -57,7 +57,7 @@ const Products = () => {
           {images.map((image) => (
             <div key={image.title} className="w-full relative">
               <h1 className="equipTitle">{image.title}</h1>
-              <img className="equipImg" src={image.img} alt="" />
+              <img className="equipImg" src={image.img} alt=""/>
             </div>
           ))}
         </div>
