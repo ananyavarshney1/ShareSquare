@@ -5,7 +5,7 @@ import './index.css'
 import Layout from './Layout.jsx'
 import { RouterProvider,createBrowserRouter } from 'react-router-dom'
 import Account from './Account/account.jsx'
-// import SignUp from './login/login.jsx'
+import SignUp from './login/login.jsx'
 const router= createBrowserRouter([
 {
   path:"/",
@@ -14,11 +14,13 @@ const router= createBrowserRouter([
     {path:"", element:<App/>},
     {path:"/home", element:<App/>},
     {path:"/account",element:<Account />},
-    // {path:"/login",element:<SignUp />}
+    {path:"/login",element:<SignUp />}
+    
 
     
-  ]
+  ]  
 }
+
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

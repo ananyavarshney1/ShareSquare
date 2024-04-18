@@ -1,7 +1,7 @@
-* {
+/* * {
 	box-sizing: border-box;
-}
-body {
+} */
+/* body {
 	background: #f6f5f7;
 	display: flex;
 	justify-content: center;
@@ -10,14 +10,14 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	height: 100vh;
 	margin: -20px 0 50px;
-}
-h1 {
+} */
+/* h1 {
 	font-weight: bold;
 	margin: 0;
-}
-h2 {
+} */
+/* h2 {
 	text-align: center;
-}
+} */
 p {
 	font-size: 14px;
 	font-weight: 100;
@@ -25,9 +25,9 @@ p {
 	letter-spacing: 0.5px;
 	margin: 20px 0 30px;
 }
-span {
+/* span {
 	font-size: 12px;
-}
+} */
 a {
 	color: grey;
 	font-size: 14px;
@@ -38,7 +38,7 @@ a:hover{
     color: black;
     transition: 0.3s;
 }
-button {
+.bt,.ghost {
 	border-radius: 20px;
 	border: 1px solid #ffc18c;
 	background-color: #ffc18c;
@@ -84,6 +84,7 @@ input {
 	width: 100%;
 }
 .container {
+	margin-top: 5rem;
 	background-color: #fff;
 	border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 

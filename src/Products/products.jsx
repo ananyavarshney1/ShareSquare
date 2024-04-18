@@ -51,7 +51,7 @@ const Products = () => {
     <div className=" products my-6">
       <div className="mx-16">
         <h1 className="text-center text-3xl font-medium my-10">
-          Sell New & Used Products
+          Rent  Products
         </h1>
         <div className="op">
           {images.map((image) => (
