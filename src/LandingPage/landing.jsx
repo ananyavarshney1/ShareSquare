@@ -29,6 +29,10 @@ const Landing = () => {
                 <div className='s1'><img src="src\assets\accept.png" alt="" className='s1logo'/><div>One click Booking</div><div className="s1text">Time saving bookings.</div> </div>
             </div>
         </div>
+
+        <div>
+            
+        </div>
         </>
     );
 }

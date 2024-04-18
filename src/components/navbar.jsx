@@ -18,7 +18,7 @@ function Navbar() {
             </div>
             <div className="navbar1">
                 <div className="home1">
-                    <Link to="/home"><div className="home">Home</div></Link>
+                    <NavLink to="/home"><div className="home">Home</div></NavLink>
                     <div className="home">Post your Property</div>
                     <div className="home"> About Us</div>
                 </div>

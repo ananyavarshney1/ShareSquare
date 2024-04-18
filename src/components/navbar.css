@@ -22,9 +22,10 @@
 
 .name,.logo{
     display: flex;
-    
     align-items: center;
-
+}
+.name{
+    margin-left:2rem;
 }
 .login {
     position:relative;
@@ -120,4 +121,9 @@
 }
 .profilemain{
     margin-right: 1rem;
+}
+
+.home{
+    color: black;
+    text-decoration: none;
 }
