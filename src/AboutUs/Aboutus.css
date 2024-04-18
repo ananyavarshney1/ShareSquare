@@ -1,25 +1,26 @@
-body{
-    background-image: url("https://files.123freevectors.com/wp-content/solidbackground/pale-wood-free-solidcolor-background.jpg");
+.about_us{
+    background-color: #fab28c;
 }
 .container{
-    background-image: url("https://files.123freevectors.com/wp-content/solidbackground/pale-blue-free-solidcolor-background.jpg");    
+    color:white;
+    background-color: #f78a4f;   
     height: 350px;
     text-align: center;
     border-radius: 25px;
-    margin: 20px;
+    margin: 50px;
     background-size: 1500px;
     
 }
 #container1{
-    /* background-image:url("https://png.pngtree.com/background/20211217/original/pngtree-cloud-art-candy-color-pastel-background-picture-image_1589366.jpg"); */
     width:30%;
     text-align: center;
     border-radius: 15px;
     margin: 10px;
+    border: 3px solid #f3f3f3;
 }
 #container1:hover{
-    /* background-image: url("https://www.designyourway.net/blog/wp-content/uploads/2018/11/pastel-backgroundblue-goo-700x394.jpg"); */
-    background-image: url("https://images.unsplash.com/photo-1579546929518-9e396f3cc809?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D");  
+    border: 2px solid #f78a4f;
+    box-shadow: 0 0 3px 3px  #f42424;
 }
 #footer{
   background-color: black;

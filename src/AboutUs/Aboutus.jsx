@@ -4,7 +4,7 @@ const About = () => {
     return ( 
 <div className="about_us">
     <div className="container">
-        <h1><u>About Us</u></h1>
+    <h1><b><u>About Us</u></b></h1>
         <p>
             <h3>SHARE SQUARE</h3>
         </p>
@@ -18,7 +18,7 @@ const About = () => {
             you may have and to provide you with the support you need.</p>
         <p></p>
     </div>
-    <h2 style={{ textAlign: 'center' }}><u>Our Team</u></h2>
+    <h2 style={{ textAlign: 'center' }}><b>Our Team</b></h2>
     <div className="row">
         <div className="column" id="container1">
             <img src="icon-login-12.jpg" alt="Ananya" />
