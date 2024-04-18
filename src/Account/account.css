@@ -29,15 +29,15 @@
 .content1 div,.content2 div,.content3 div{
     width: 28%;
     height: 86%;
-    border: 5px solid #f3f3f3;
+    border: 3px solid #f3f3f3;
     background-color: white;
-    border-radius: 10%;
+    border-radius: 20%;
     font-weight: 700;
     font-size: 1rem;
 }
 .content1 div:hover,.content2 div:hover,.content3 div:hover{
     border: 2px solid rgba(128, 128, 128, 0.782);
-    box-shadow: 0 0 5px 5px  #cccccc;
+    box-shadow: 0 0 3px 3px  #cccccc;
 }
 .content4{
     width: 95%;
@@ -51,16 +51,16 @@
 .content4 div{
     width: 28%;
     height: 86%;
-    border: 5px solid #f3f3f3;
+    border: 3px solid #f3f3f3;
     background-color: white;
     margin-left: 50px;
-    border-radius: 10%;
+    border-radius: 20%;
     font-weight: 700;
     font-size: 1rem;
 }
 .content4 div:hover{
     border: 2px solid rgba(128, 128, 128, 0.782);
-    box-shadow: 0 0 5px 5px  #cccccc;
+    box-shadow: 0 0 3px 3px  #cccccc;
 }
 #icon1{
     font-size: 60px;
