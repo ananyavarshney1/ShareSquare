@@ -29,63 +29,16 @@
 .content1 div,.content2 div,.content3 div{
     width: 28%;
     height: 86%;
-    border: 5px solid #f3f3f3;
+    border: 3px solid #f3f3f3;
     background-color: white;
-    border-radius: 5%;
+    border-radius: 15%;
     font-weight: 700;
     font-size: 1rem;
 }
 .content1 div:hover,.content2 div:hover,.content3 div:hover{
-    border: 5px solid rgba(128, 128, 128, 0.782);
-    box-shadow: 0 0 5px 5px rgba(128, 128, 128, 0.825);
+    border: 2px solid rgba(128, 128, 128, 0.782);
+    box-shadow: 0 0 3px 3px  #cccccc;
 }
-/* .content2{
-    width: 95%;
-    height: 30%;
-    border: 0.01px solid white;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.content2 div{
-    width: 28%;
-    height: 86%;
-    border: 5px solid #f3f3f3;
-    background-color: white;
-    border-radius: 5%;
-    font-weight: 700;
-    font-size: 1rem;
-} */
-/* .content2 div:hover{
-    border: 5px solid rgba(128, 128, 128, 0.782);
-    box-shadow: 0 0 10px 10px  #cccccc;
-} */
-/* .content3{
-    width: 95%;
-    height: 30%;
-    border: 0.01px solid white;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.content3 div{
-    width: 28%;
-    height: 86%;
-    border: 5px solid #f3f3f3;
-    background-color: white;
-    border-radius: 5%;
-    font-weight: 700;
-    font-size: 1rem;
-} */
-/* .content3 div:hover{
-    border: 5px solid rgba(128, 128, 128, 0.782);
-    box-shadow: 0 0 10px 10px  #cccccc;
- } */
-
 .content4{
     width: 95%;
     height: 30%;
@@ -98,16 +51,16 @@
 .content4 div{
     width: 28%;
     height: 86%;
-    border: 5px solid #f3f3f3;
+    border: 3px solid #f3f3f3;
     background-color: white;
     margin-left: 50px;
-    border-radius: 5%;
+    border-radius: 15%;
     font-weight: 700;
     font-size: 1rem;
 }
 .content4 div:hover{
-    border: 5px solid rgba(128, 128, 128, 0.782);
-    box-shadow: 0 0 10px 10px  #cccccc;
+    border: 2px solid rgba(128, 128, 128, 0.782);
+    box-shadow: 0 0 3px 3px  #cccccc;
 }
 #icon1{
     font-size: 60px;
