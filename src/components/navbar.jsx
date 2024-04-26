@@ -20,7 +20,7 @@ function Navbar() {
                 <div className="home1">
                     <NavLink to="/home" className="navlink-style"><div className="home3">Home</div></NavLink>
                     <NavLink to ="/" className="navlink-style"><div className="home3">Post your Property</div></NavLink>
-                     <NavLink to="/" className="navlink-style"><div className="home3"> About Us</div></NavLink>
+                     <NavLink to="/aboutus" className="navlink-style"><div className="home3"> About Us</div></NavLink>
                 </div>
                 <NavLink to="/account">
                     <div className="profilemain">

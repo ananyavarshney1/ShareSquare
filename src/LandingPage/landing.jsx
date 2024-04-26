@@ -4,6 +4,8 @@ import BootstrapCarousel from './carousel';
 import { faCouch, faTv, faLaptop, faDumbbell, faBicycle } from '@fortawesome/free-solid-svg-icons';
 // import {couch} from "../../node_modules/@fortawesome/free-solid-svg-icons/faCouch.js"   
 // node_modules\@fortawesome\free-solid-svg-icons\faCouch.js"
+import { Link, NavLink } from "react-router-dom"
+
 const Landing = () => {
     return (
         <>
@@ -34,27 +36,30 @@ const Landing = () => {
             </div>
 
             <div className='categories'>
-            <div><h2><center className='head1'>Find by Categories </center></h2></div>
+                <div><h2><center className='head1'>Find by Categories </center></h2></div>
                 <div className="content1_a2">
-                    
+
+                    <NavLink to="/furniture">                    
                     <div id="content1_a2_1">
-                    <a href="furnitre.html"><img src="src\assets\sofa1.png" alt="" className='category'/></a>
+                      <img src="src\assets\sofa1.png" alt="" className='category'/>
                         <center><h4>Furniture</h4></center>
                     </div>
+                    </NavLink>
+                    
                     <div id="content1_a2_2">
-                    <a href="appliances.html"><img src="src\assets\television1.png" alt="" className='category'/></a>
+                        <a href="appliances.html"><img src="src\assets\television1.png" alt="" className='category' /></a>
                         <center><h4>Appliances</h4></center>
                     </div>
                     <div id="content1_a2_3">
-                    <a href="electronics.html"> <img src="src\assets\laptop-computer.png" alt="" className='category'/></a>
+                        <a href="electronics.html"> <img src="src\assets\laptop-computer.png" alt="" className='category' /></a>
                         <center><h4>Electronics</h4></center>
                     </div>
-                   <div id="content1_a2_4">
-                   <a href="fitness.html"><img src="src\assets\dumbell.png" alt="" className='category'/></a>
+                    <div id="content1_a2_4">
+                        <a href="fitness.html"><img src="src\assets\dumbell.png" alt="" className='category' /></a>
                         <center><h4>Fitness</h4></center>
                     </div>
-                     <div id="content1_a2_5">
-                     <a href=""><img src="src\assets\bicycle1.png" alt="" className='category'/></a>
+                    <div id="content1_a2_5">
+                        <a href=""><img src="src\assets\bicycle1.png" alt="" className='category' /></a>
                         <center><h4>Bicycle</h4></center>
                     </div>
                 </div>
