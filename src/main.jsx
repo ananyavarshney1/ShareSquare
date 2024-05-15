@@ -8,6 +8,10 @@ import Account from './Account/account.jsx'
 import SignUp from './login/login.jsx'
 import About from './AboutUs/Aboutus.jsx'
 import Furniture from './Productpages/Furniture.jsx'
+import Appliances from './Productpages/Applianes.jsx'
+import Electronics from './Productpages/Eletronics.jsx'
+import Fitness from './Productpages/Fitness.jsx'
+import Bicycle from './Productpages/Bicycle.jsx'
 
 const router= createBrowserRouter([
 {
@@ -19,7 +23,11 @@ const router= createBrowserRouter([
     {path:"/account",element:<Account />},
     {path:"/login",element:<SignUp />},
     {path:"/aboutus",element:< About/>},
-    {path:"/furniture",element:< Furniture/>}
+    {path:"/furniture",element:< Furniture/>},
+    {path:"/appliances",element:<Appliances/>},
+    {path:"/electronic",element:<Electronics/>},
+    {path:"/fitness" ,element:<Fitness/>},
+    {path:"/bicycle",element:<Bicycle/>}
     
 
     

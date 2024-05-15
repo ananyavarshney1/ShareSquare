@@ -46,22 +46,33 @@ const Landing = () => {
                     </div>
                     </NavLink>
                     
+                    <NavLink to="/appliances">
                     <div id="content1_a2_2">
                         <a href="appliances.html"><img src="src\assets\television1.png" alt="" className='category' /></a>
                         <center><h4>Appliances</h4></center>
                     </div>
+                    </NavLink>
+
+                    <NavLink to="/electronic">
                     <div id="content1_a2_3">
                         <a href="electronics.html"> <img src="src\assets\laptop-computer.png" alt="" className='category' /></a>
                         <center><h4>Electronics</h4></center>
                     </div>
+                    </NavLink>
+                    
+                    <NavLink to="/fitness">
                     <div id="content1_a2_4">
                         <a href="fitness.html"><img src="src\assets\dumbell.png" alt="" className='category' /></a>
                         <center><h4>Fitness</h4></center>
                     </div>
+                    </NavLink>
+
+                    <NavLink to="/bicycle">
                     <div id="content1_a2_5">
                         <a href=""><img src="src\assets\bicycle1.png" alt="" className='category' /></a>
                         <center><h4>Bicycle</h4></center>
                     </div>
+                    </NavLink>
                 </div>
             </div>
         </>

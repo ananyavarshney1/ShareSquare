@@ -11,7 +11,7 @@ const Furniture = () => {
             <div className="shop-section">
                 <div className="box1 box">
                     <div className="box-content">
-                        <h3>Solimo wood finish study desk(Black)</h3>
+                        <h5>Solimo wood finish study</h5>
                         <div className="box-img" style={{ backgroundImage: "url('https://tse4.mm.bing.net/th?id=OIP.ieE9-RTGc_O1elvjI6hbDAHaFO&pid=Api&P=0&h=180')" }}></div>
                         <div>
                             <div className="p"><p>$800/mo</p></div>
@@ -21,7 +21,7 @@ const Furniture = () => {
                 </div>
                 <div className="box2 box">
                     <div className="box-content">
-                        <h3>Solimo wood finish study desk(Black)</h3>
+                        <h5>Solimo wood finish study</h5>
                         <div className="box-img" style={{ backgroundImage: "url('https://p.rmjo.in/productSquare/b35adwag-500x500.jpg')" }}></div>
                         <div>
                             <div className="p"><p>$800/mo</p></div>
@@ -31,7 +31,7 @@ const Furniture = () => {
                 </div>
                 <div className="box3 box">
                     <div className="box-content">
-                        <h3>Solimo wood finish study desk(Black)</h3>
+                        <h5>Solimo wood finish study</h5>
                         <div className="box-img" style={{ backgroundImage: "url('https://p.rmjo.in/productSquare/6gf1ht1e-500x500.jpg')" }}></div>
                         <div>
                             <div className="p"><p>$800/mo</p></div>
@@ -41,7 +41,7 @@ const Furniture = () => {
                 </div>
                 <div className="box4 box">
                     <div className="box-content">
-                        <h3>Solimo wood finish study desk(Black)</h3>
+                        <h5>Solimo wood finish study</h5>
                         <div className="box-img" style={{ backgroundImage: "url('https://p.rmjo.in/productSquare/16ctgjip-500x500.jpg')" }}></div>
                         <div>
                             <div className="p"><p>$800/mo</p></div>
@@ -51,7 +51,7 @@ const Furniture = () => {
                 </div>
                 <div className="box5 box">
                     <div className="box-content">
-                        <h3>Solimo wood finish study desk(Black)</h3>
+                        <h5>Solimo wood finish study</h5>
                         <div className="box-img" style={{ backgroundImage: "url('https://p.rmjo.in/productSquare/i8ewnp1z-500x500.jpg')" }}></div>
                         <div>
                             <div className="p"><p>$800/mo</p></div>
@@ -61,7 +61,7 @@ const Furniture = () => {
                 </div>
                 <div className="box6 box">
                     <div className="box-content">
-                        <h3>Solimo wood finish study desk(Black)</h3>
+                        <h5>Solimo wood finish study</h5>
                         <div className="box-img" style={{ backgroundImage: "url('https://p.rmjo.in/productSquare/6iljb511-500x500.jpg')" }}></div>
                         <div>
                             <div className="p"><p>$800/mo</p></div>
@@ -71,7 +71,7 @@ const Furniture = () => {
                 </div>
                 <div className="box7 box">
                     <div className="box-content">
-                        <h3>Solimo wood finish study desk(Black)</h3>
+                        <h5>Solimo wood finish study</h5>
                         <div className="box-img" style={{ backgroundImage: "url('https://p.rmjo.in/productSquare/gr0b5smw-500x500.jpg')" }}></div>
                         <div>
                             <div className="p"><p>$800/mo</p></div>
@@ -81,7 +81,7 @@ const Furniture = () => {
                 </div>
                 <div className="box8 box">
                     <div className="box-content">
-                        <h3>Solimo wood finish study desk(Black)</h3>
+                        <h5>Solimo wood finish study</h5>
                         <div className="box-img" style={{ backgroundImage: "url('https://p.rmjo.in/productSquare/xpyf0rcv-500x500.jpg')" }}></div>
                         <div>
                             <div className="p"><p>$800/mo</p></div>
@@ -89,9 +89,9 @@ const Furniture = () => {
                         </div>
                     </div>
                 </div>
-                <div className="box8 box">
+                <div className="box9 box">
                     <div className="box-content">
-                        <h3>Solimo wood finish study desk(Black)</h3>
+                        <h5>Solimo wood finish study</h5>
                         <div className="box-img" style={{ backgroundImage: "url('https://p.rmjo.in/productSquare/h98dzvch-500x500.jpg')" }}></div>
                         <div>
                             <div className="p"><p>$800/mo</p></div>
