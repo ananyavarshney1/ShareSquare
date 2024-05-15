@@ -1,0 +1,40 @@
+.about_us{
+    background-color: #fab28c;
+}
+.container{
+    color:white;
+    background-color: #f78a4f;   
+    height: 350px;
+    text-align: center;
+    border-radius: 25px;
+    margin: 50px;
+    background-size: 1500px;
+    
+}
+#container1{
+    width:30%;
+    text-align: center;
+    border-radius: 15px;
+    margin: 10px;
+    border: 3px solid #f3f3f3;
+}
+#container1:hover{
+    border: 2px solid #f78a4f;
+    box-shadow: 0 0 3px 3px  #f42424;
+}
+#footer{
+  background-color: black;
+  height: 300px;
+}
+#footer1{
+    background-color:black;
+    height:280px;
+    width:32%;
+    margin:10px;
+    color:white;
+    text-align: center;
+}
+img{
+    height: 200px;
+    border-radius: 50%;
+}

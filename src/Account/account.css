@@ -26,18 +26,21 @@
     align-items: center;
     justify-content: space-evenly;
 }
+
 .content1 div,.content2 div,.content3 div{
     width: 28%;
     height: 86%;
     border: 3px solid #f3f3f3;
     background-color: white;
+
     border-radius: 2rem;
+
     font-weight: 700;
     font-size: 1rem;
 }
 .content1 div:hover,.content2 div:hover,.content3 div:hover{
-    border: 2px solid rgba(128, 128, 128, 0.782);
-    box-shadow: 0 0 3px 3px  #cccccc;
+    border: 3px solid rgba(128, 128, 128, 0.782);
+    box-shadow: 0 0 3px 3px rgba(128, 128, 128, 0.825);
 }
 .content4{
     width: 95%;
@@ -54,7 +57,9 @@
     border: 3px solid #f3f3f3;
     background-color: white;
     margin-left: 50px;
+
     border-radius: 2rem;
+
     font-weight: 700;
     font-size: 1rem;
 }
