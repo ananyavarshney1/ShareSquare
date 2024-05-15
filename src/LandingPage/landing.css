@@ -102,6 +102,7 @@
 }
 
 .content1_a2 div{
+    color: black;
     height: 150px;
     width: 150px;
     border-radius: 8%;
@@ -111,6 +112,12 @@
     margin-bottom: 12rem;
     margin-top: 12rem;
 }
+
+.content1_a2 div:hover{
+    scale: 1.1;
+    color:gray
+}
+
 .category{
     width:9rem;
     
