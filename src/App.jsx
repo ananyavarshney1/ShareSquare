@@ -13,9 +13,10 @@ function App() {
   return (
     <>
       
-     
+      {/* <div><Navbar /></div> */}
       <div><Landing /></div>
       <div><Products /></div>
+      {/* <div><Footer /></div> */}
     </>
   )
 }

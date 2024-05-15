@@ -28,8 +28,7 @@ const SignUp = () => {
   }, []);
 
   return (
-    <div className={isSignInActive ? "container right-panel-active" : "container"} id="container">
-
+    <div className={`container ${isSignInActive ? "right-panel-active" : ""}`} id="container">
       <div className="form-container sign-up-container">
         <form action="#">
           <h1>Create Account</h1>
@@ -38,7 +37,7 @@ const SignUp = () => {
           <input type="email" placeholder="Email" required/>
           <input type="password" placeholder="Password" required/>
           <input type="checkbox" />I agree to the terms and conditions 
-          <button type="submit">Sign Up</button>
+          <button type="submit" className='bt'>Sign Up</button>
         </form>
       </div>
       <div className="form-container log-in-container">
@@ -48,7 +47,7 @@ const SignUp = () => {
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password" />
           <a href="#">Forgot password ?</a>
-          <button type="submit">Log In</button>
+          <button type="submit" className='bt'>Log In</button>
         </form>
       </div>
       <div className="overlay-container">
@@ -56,7 +55,7 @@ const SignUp = () => {
           <div className="overlay-panel overlay-left">
             <h1>Already have an Account ?</h1>
             <p>Great ! You can simply log in and continue</p>
-            <button className="ghost" id="logIn">Log In</button>
+            <button className="ghost" id="logIn" >Log In</button>
           </div>
           <div className="overlay-panel overlay-right">
             <h1>Don't have an Account ?</h1>

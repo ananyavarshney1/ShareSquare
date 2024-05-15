@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import './carousel.css'
 const BootstrapCarousel = () => {
   return (
     <Carousel>
@@ -32,8 +32,8 @@ const BootstrapCarousel = () => {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="src\assets\mainimg.jpg"
+          className="cycle d-block w-100"
+          src="src\assets\cycle.webp"
           alt="Third slide"
           style={{ maxHeight: '500px', objectFit: 'cover' }}
         />

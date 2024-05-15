@@ -1,7 +1,7 @@
 .navbar{
-    background-color: 	#ffc18c;
+    background-color: 	#c7764a;
     width: screen;
-    height: 4rem;
+    height: 5rem;
     margin-top: -0.5rem;
     /* margin-right: -0.5rem; */
     /* margin-left: -0.5rem; */
@@ -13,7 +13,7 @@
 
 }
 .s{
-    color: #ca6c19;
+    color:#702d0a;
     font-weight: bolder;
 }
 .part2{
@@ -30,6 +30,8 @@
 }
 .name{
     margin-left:2rem;
+    color: white;
+    font-weight: bold;
     
 }
 .login {
@@ -100,7 +102,7 @@
     user-select: none;
     cursor: pointer;
     border-bottom:gray solid;
-    
+    background-color: #e1b690;
 }
 /* .navbar1:hover{
     color:#d1690e;
@@ -112,13 +114,15 @@
     flex-direction: row;
     text-decoration: none;
 }
-
+.navlink-style{
+    text-decoration: none;
+}
 .profile{
     /* margin-left:40rem; */
     width: 3rem;
     height: 3rem;
 }
-.home:hover{
+.home3:hover{
     color: #ca6c19;
 }
 .user{
@@ -130,7 +134,8 @@
     margin-right: 1rem;
 }
 
-.home{
+.home3{
+    font-size: 1rem;
     color: black;
     text-decoration: none;
 }

@@ -5,8 +5,8 @@ import './index.css'
 import Layout from './Layout.jsx'
 import { RouterProvider,createBrowserRouter } from 'react-router-dom'
 import Account from './Account/account.jsx'
-// import About from './AboutUs/Aboutus.jsx'
-// import SignUp from './login/login.jsx'
+
+import SignUp from './login/login.jsx'
 
 const router= createBrowserRouter([
 {
@@ -15,13 +15,16 @@ const router= createBrowserRouter([
   children:[
     {path:"", element:<App/>},
     {path:"/home", element:<App/>},
-    {path:"/account",element:<Account/>},
-    // {path:"/aboutus",element:<About/>},
-    // {path:"/login",element:<SignUp />}
+
+    {path:"/account",element:<Account />},
+    {path:"/login",element:<SignUp />}
+    
+
 
     
-  ]
+  ]  
 }
+
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

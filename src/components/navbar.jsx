@@ -12,22 +12,25 @@ function Navbar() {
                     <div className="name "><h2><span className="s">S</span>hare<span className="s">S</span>quare</h2></div>
                 </div>
                 <div className="part2">
-                    <div className="login"><img src="src\assets\login.png" alt="" className="logoimg" /> Login</div>
+                <NavLink to="/login"><div className="login"><img src="src\assets\login.png" alt="" className="logoimg" />Login </div></NavLink>
                     <div className="seperator"><img src="src\assets\icons8-vertical-line-32.png" alt="" /></div>
-                    <div className="signup"><img src="src\assets\add-user.png" alt="" className="logoimg" />Sign Up</div>
+                    <NavLink to="/login"><div className="signup"><img src="src\assets\add-user.png" alt="" className="logoimg" />Sign Up</div></NavLink>
                 </div>
             </div>
             <div className="navbar1">
                 <div className="home1">
-                <NavLink to="/home"><div className="home">Home</div></NavLink>
-                    <NavLink to ="/"><div className="home">Post your Property</div></NavLink>
-                    <NavLink to="/aboutus"><div className="home"> About Us</div></NavLink>
+
+                
+                    <NavLink to="/home" className="navlink-style"><div className="home3">Home</div></NavLink>
+                    <NavLink to ="/" className="navlink-style"><div className="home3">Post your Property</div></NavLink>
+                     <NavLink to="/" className="navlink-style"><div className="home3"> About Us</div></NavLink>
+
                 </div>
                 <NavLink to="/account">
                     <div className="profilemain">
                     <div className="profile"> <button><img src="src\assets\user.png" alt="" className="user" /></button></div>
                     </div>
-                    </NavLink> 
+                </NavLink> 
             </div>
         </>
     )
