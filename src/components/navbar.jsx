@@ -2,6 +2,7 @@ import React from "react";
 import login from '../assets/user.png'
 import './navbar.css'
 import { Link,NavLink } from "react-router-dom"
+
 function Navbar() {
     return (
         <>
@@ -18,14 +19,17 @@ function Navbar() {
             </div>
             <div className="navbar1">
                 <div className="home1">
+
+                
                     <NavLink to="/home" className="navlink-style"><div className="home3">Home</div></NavLink>
                     <NavLink to ="/" className="navlink-style"><div className="home3">Post your Property</div></NavLink>
+
                      <NavLink to="/aboutus" className="navlink-style"><div className="home3"> About Us</div></NavLink>
+
                 </div>
                 <NavLink to="/account">
                     <div className="profilemain">
                     <div className="profile"> <button><img src="src\assets\user.png" alt="" className="user" /></button></div>
-
                     </div>
                 </NavLink> 
             </div>
