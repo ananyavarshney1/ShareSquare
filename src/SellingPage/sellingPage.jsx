@@ -152,6 +152,7 @@ const SellingPage = () => {
                 Explore a world of convenience and choice with our diverse range of products. High-quality items from trusted sellers. Flexible rental options to suit your needs. Secure payment options for a worry-free transaction.
             </p>
         </div>
+        <div className="space"></div>
         </div>
     );
 };

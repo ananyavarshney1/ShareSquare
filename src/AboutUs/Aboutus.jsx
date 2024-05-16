@@ -66,7 +66,6 @@ const About = () => {
           <h2>Abhay</h2>
           <p className="title">Member</p>
         </div>
-
       </div>
     </div>
 
