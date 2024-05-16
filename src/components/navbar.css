@@ -108,9 +108,10 @@
     color:#d1690e;
 } */
 .home1{
-    width: 24rem;
+    width: 30rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    gap: 1.0rem;
     flex-direction: row;
     text-decoration: none;
 }

@@ -25,7 +25,7 @@ function Navbar() {
                     <NavLink to ="/" className="navlink-style"><div className="home3">Post your Property</div></NavLink>
 
                      <NavLink to="/aboutus" className="navlink-style"><div className="home3"> About Us</div></NavLink>
-
+                     <NavLink to="/contactus" className="navlink-style"><div className="home3"> Contact Us</div></NavLink>
                 </div>
                 <NavLink to="/account">
                     <div className="profilemain">
