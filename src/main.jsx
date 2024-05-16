@@ -4,10 +4,9 @@ import App from './App.jsx'
 import './index.css'
 import Layout from './Layout.jsx'
 import { RouterProvider,createBrowserRouter } from 'react-router-dom'
+
 import Account from './Account/account.jsx'
-
 import SignUp from './login/login.jsx'
-
 import About from './AboutUs/Aboutus.jsx'
 import Furniture from './Productpages/Furniture.jsx'
 import Appliances from './Productpages/Applianes.jsx'
@@ -15,6 +14,9 @@ import Electronics from './Productpages/Eletronics.jsx'
 import Fitness from './Productpages/Fitness.jsx'
 import Bicycle from './Productpages/Bicycle.jsx'
 import ContactUs from './ContactUs/ContactUs.jsx'
+import SellingPage from './SellingPage/sellingPage.jsx'
+
+
 
 const router= createBrowserRouter([
 {
@@ -25,6 +27,8 @@ const router= createBrowserRouter([
     {path:"/home", element:<App/>}, 
     {path:"/aboutus",element:< About/>},
     {path:"/contactus", element:<ContactUs/>},
+    {path:"/property",element:<SellingPage/>},
+
     {path:"/account",element:<Account />},
     {path:"/login",element:<SignUp />},
 
@@ -33,9 +37,6 @@ const router= createBrowserRouter([
     {path:"/electronic",element:<Electronics/>},
     {path:"/fitness" ,element:<Fitness/>},
     {path:"/bicycle",element:<Bicycle/>}
-    
-
-
     
   ]  
 }
