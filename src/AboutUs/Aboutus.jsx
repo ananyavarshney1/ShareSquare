@@ -1,4 +1,5 @@
 import "./Aboutus.css"
+
 import photo from "../assets/icon-login-12.jpg"
 
 const About = () => {
@@ -68,6 +69,9 @@ const About = () => {
 
       </div>
     </div>
+
+
+
 
 
      );

@@ -1,4 +1,5 @@
 .about_us{
+
     background-color:#fcb85f ;
 }
 
@@ -26,6 +27,7 @@
     
 }
 #container1{
+
     width:12rem;
     height: 12rem;
     text-align: center;
@@ -34,11 +36,13 @@
     border: 3px solid white;
     font-size: 0.9rem;
     
+
 }
 #container1:hover{
     border: 2px solid #f78a4f;
     box-shadow: 0 0 3px 3px  #f42424;
 }
+
 .photo img{
     height:5rem;
     width: 5rem;

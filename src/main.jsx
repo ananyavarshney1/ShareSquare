@@ -5,7 +5,9 @@ import './index.css'
 import Layout from './Layout.jsx'
 import { RouterProvider,createBrowserRouter } from 'react-router-dom'
 import Account from './Account/account.jsx'
+
 import SignUp from './login/login.jsx'
+
 import About from './AboutUs/Aboutus.jsx'
 import Furniture from './Productpages/Furniture.jsx'
 import Appliances from './Productpages/Applianes.jsx'
@@ -32,6 +34,7 @@ const router= createBrowserRouter([
     {path:"/fitness" ,element:<Fitness/>},
     {path:"/bicycle",element:<Bicycle/>}
     
+
 
     
   ]  
