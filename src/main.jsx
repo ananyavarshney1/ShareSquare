@@ -12,6 +12,7 @@ import Appliances from './Productpages/Applianes.jsx'
 import Electronics from './Productpages/Eletronics.jsx'
 import Fitness from './Productpages/Fitness.jsx'
 import Bicycle from './Productpages/Bicycle.jsx'
+import ContactUs from './ContactUs/ContactUs.jsx'
 
 const router= createBrowserRouter([
 {
@@ -19,10 +20,12 @@ const router= createBrowserRouter([
   element:<Layout />,
   children:[
     {path:"", element:<App/>},
-    {path:"/home", element:<App/>},
+    {path:"/home", element:<App/>}, 
+    {path:"/aboutus",element:< About/>},
+    {path:"/contactus", element:<ContactUs/>},
     {path:"/account",element:<Account />},
     {path:"/login",element:<SignUp />},
-    {path:"/aboutus",element:< About/>},
+
     {path:"/furniture",element:< Furniture/>},
     {path:"/appliances",element:<Appliances/>},
     {path:"/electronic",element:<Electronics/>},
