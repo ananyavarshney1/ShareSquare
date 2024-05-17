@@ -15,9 +15,6 @@ import BicycleList from './Productpages/BicycleList.jsx'
 import ContactUs from './ContactUs/ContactUs.jsx'
 
 
-
-
-
 import ElectronicList from './Productpages/EletronicList.jsx'
 import FittnessList from './Productpages/FitnessList.jsx'
 import SellingPage from './SellingPage/sellingPage.jsx'
@@ -43,11 +40,11 @@ const router= createBrowserRouter([
     {path:"/bed",element:<Bed />},
     {path:"/wash",element:<WashingMachine />},
 
-    {path:"/furniture",element:< Furniture/>},
-    {path:"/appliances",element:<Appliances/>},
-    {path:"/electronic",element:<Electronics/>},
-    {path:"/fitness" ,element:<Fitness/>},
-    {path:"/bicycle",element:<Bicycle/>}
+    {path:"/furniture",element:< FurnitureList/>},
+    {path:"/appliances",element:<ApplianceList/>},
+    {path:"/electronic",element:<ElectronicList/>},
+    {path:"/fitness" ,element:<FittnessList/>},
+    {path:"/bicycle",element:<BicycleList/>}
     
   ]  
 }
