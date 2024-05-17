@@ -9,12 +9,13 @@ import Account from './Account/account.jsx'
 import SignUp from './login/login.jsx'
 
 import About from './AboutUs/Aboutus.jsx'
-import Furniture from './Productpages/Furniture.jsx'
-import Appliances from './Productpages/Applianes.jsx'
-import Electronics from './Productpages/Eletronics.jsx'
-import Fitness from './Productpages/Fitness.jsx'
-import Bicycle from './Productpages/Bicycle.jsx'
+import FurnitureList from './Productpages/FurnitureList.jsx'
+import ApplianceList from './Productpages/ApplianceList.jsx'
+
+import BicycleList from './Productpages/BicycleList.jsx'
 import ContactUs from './ContactUs/ContactUs.jsx'
+import ElectronicList from './Productpages/EletronicList.jsx'
+import FittnessList from './Productpages/FitnessList.jsx'
 
 const router= createBrowserRouter([
 {
@@ -28,11 +29,11 @@ const router= createBrowserRouter([
     {path:"/account",element:<Account />},
     {path:"/login",element:<SignUp />},
 
-    {path:"/furniture",element:< Furniture/>},
-    {path:"/appliances",element:<Appliances/>},
-    {path:"/electronic",element:<Electronics/>},
-    {path:"/fitness" ,element:<Fitness/>},
-    {path:"/bicycle",element:<Bicycle/>}
+    {path:"/furniture",element:< FurnitureList/>},
+    {path:"/appliances",element:<ApplianceList/>},
+    {path:"/electronic",element:<ElectronicList/>},
+    {path:"/fitness" ,element:<FittnessList/>},
+    {path:"/bicycle",element:<BicycleList/>}
     
 
 
