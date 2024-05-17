@@ -4,7 +4,7 @@
     gap: 2rem;
     margin-left: 5rem;
     margin-right: 5rem   ;
-    margin-bottom: 10px;
+    margin-bottom: 10rem;
 }
 .products{
    margin-top: 10rem;
@@ -27,8 +27,8 @@
 
 .equipTitle {
     position: relative;
-    top:3rem ;
-    left: 10px;
+    top:2.5rem ;
+    left: 1rem;
     color: white;
     z-index: 999;
     font-weight: 700;

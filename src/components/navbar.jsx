@@ -28,7 +28,7 @@ function Navbar() {
                 </div>
                 <NavLink to="/account">
                     <div className="profilemain">
-                    <div className="profile"> <button><img src="src\assets\user.png" alt="" className="user" /></button></div>
+                    <div className="profile"> <img src="src\assets\user.png" alt="" className="user" /></div>
                     </div>
                 </NavLink> 
             </div>
