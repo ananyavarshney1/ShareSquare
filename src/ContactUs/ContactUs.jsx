@@ -1,32 +1,88 @@
-import "./Contactus.css"
+import { useState } from 'react';
+import './Contactus.css';
 
 const ContactUs = () => {
+    const [formData, setFormData] = useState({
+        to: '', // Hardcoded as per your JSON example
+        subject: '', // Hardcoded as per your JSON example
+        message: '',
+        name: ''
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await fetch('http://localhost:8080/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+            if (response.ok) {
+                alert('Message sent successfully!');
+                setFormData({
+                    to: '',
+                    subject: 'Test Email',
+                    message: '',
+                    name: ''
+                });
+            } else {
+                alert('Failed to send message. Please try again later.');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('An error occurred. Please try again later.');
+        }
+    };
 
     return (
-            <div className="formclass">
-                <div className="space"></div>
+        <div className="formclass">
+            <div className="space"></div>
             <div className="forms">
-            <h1>Contact Us</h1>
-            <p>How can we help you..</p>
-            <div className="miniform">  
-                <form action="/action_page.php">
-                    <label htmlFor="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name.." />
-                    <label htmlFor="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
-                    <label htmlFor="email">E-mail</label>
-                    <input type="email" id="email" name="email" placeholder="Your email.." />
-                    <label htmlFor="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write your message.." style={{ height: "170px" }}></textarea>
-                    <input type="submit" value="Send Message" />
-                </form>
+                <h1>Contact Us</h1>
+                <p>How can we help you..</p>
+                <div className="miniform">
+                    <form onSubmit={handleSubmit}>
+                        <label htmlFor="name">Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your name.."
+                            value={formData.name}
+                            onChange={handleChange}
+                        />
+                        <label htmlFor="email">E-mail</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="to"
+                            placeholder="Your email.."
+                            value={formData.to}
+                            onChange={handleChange}
+                        />
+                        <label htmlFor="message">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Write your message.."
+                            style={{ height: '170px' }}
+                            value={formData.message}
+                            onChange={handleChange}
+                        ></textarea>
+                        <input type="submit" value="Send Message" />
+                    </form>
+                </div>
             </div>
-        
+            <div className="space"></div>
         </div>
-        <div className="space"></div>
-            </div>
-        
     );
-}
+};
 
 export default ContactUs;
