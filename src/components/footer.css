@@ -1,10 +1,8 @@
-
-
-   .footer{
-    margin-top: 3rem;
-    height: 450px;
+.footer{
+    /* margin-top: 3rem; */
+    height: 22rem;
     width: 100%;
-    background-color: black;
+    background-color:#333;
     border: 1px solid #f3f3f3;
     display: flex;
     flex-direction: column;
@@ -15,7 +13,7 @@
 .footer1{
     height: 300px;
     width: 95%;
-    background-color: black;
+    background-color:#333;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -38,7 +36,7 @@
 .footer2 {
     height: 80rem;
     width : 95%;
-    background-color: black;
+    background-color: #333;
     /* border: 1px solid beige; */
     display: flex;
     align-items: center;

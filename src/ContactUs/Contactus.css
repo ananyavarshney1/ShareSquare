@@ -5,20 +5,28 @@
     max-width: 35rem;   
     margin: 0 auto;
     padding: 30px;
-    background-color: #e8e8e8;
-    border-radius: 10px;
+    /* background-color: #e8e8e8; */
+    border-radius:1.0rem;
+    /* border:0.1rem solid black; */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+.formclass h1 {
     text-decoration: underline;
     text-align: center;
     margin-bottom: 30px;
     color: #333;
 }
 
+form {
+    background-color:rgb(242, 236, 236);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 label {
-     margin-bottom: 0px;
+    margin-bottom: 0px;
     font-weight: bold;
 }
 
@@ -26,11 +34,12 @@ input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
-    padding: 12px;
+    padding: 0.8rem;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    border: 1px solid black;
+    border-radius: 0.3rem;
     box-sizing: border-box;
+    
 }
 
 textarea {
@@ -38,8 +47,7 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: green; 
-    color: white; 
+    background-color: #c7764a;
     padding: 12px 24px;
     border: none;
     border-radius: 6px;
@@ -49,77 +57,5 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #e64a19;
+    background-color: rgb(113, 254, 113);
 }
-
-
-
-/* .forms {
-    background-color: #ff4d4d; 
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 500px;
-    text-align: center; 
-}
-
-.forms h1 {
-    margin-top: 0;
-}
-
-.forms p {
-    margin: 10px 0 20px;
-}
-
-.miniform {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.miniform label {
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 10px;
-    display: block;
-    text-align: left;
-}
-
-.miniform input[type="text"],
-.miniform input[type="email"],
-.miniform textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0 20px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 16px;
-}
-
-.miniform textarea {
-    resize: vertical;
-}
-
-.miniform input[type="submit"] {
-    background-color: #ff4d4d;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-.miniform input[type="submit"]:hover {
-    background-color: #e60000;
-}
-
-::placeholder {
-    color: #999;
-} */

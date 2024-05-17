@@ -92,7 +92,6 @@
 
 .navbar1{
     display: flex;
-    /* width: 50%; */
     height: 4rem;
     justify-content:space-between;
     align-items: center;
@@ -102,7 +101,7 @@
     user-select: none;
     cursor: pointer;
     border-bottom:gray solid;
-    background-color: #e1b690;
+    background-color: white;
 }
 /* .navbar1:hover{
     color:#d1690e;

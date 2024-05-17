@@ -4,18 +4,23 @@ import App from './App.jsx'
 import './index.css'
 import Layout from './Layout.jsx'
 import { RouterProvider,createBrowserRouter } from 'react-router-dom'
+
 import Account from './Account/account.jsx'
-
 import SignUp from './login/login.jsx'
-
 import About from './AboutUs/Aboutus.jsx'
 import FurnitureList from './Productpages/FurnitureList.jsx'
 import ApplianceList from './Productpages/ApplianceList.jsx'
 
 import BicycleList from './Productpages/BicycleList.jsx'
 import ContactUs from './ContactUs/ContactUs.jsx'
+
+
+
+
+
 import ElectronicList from './Productpages/EletronicList.jsx'
 import FittnessList from './Productpages/FitnessList.jsx'
+
 
 const router= createBrowserRouter([
 {
@@ -26,6 +31,8 @@ const router= createBrowserRouter([
     {path:"/home", element:<App/>}, 
     {path:"/aboutus",element:< About/>},
     {path:"/contactus", element:<ContactUs/>},
+    {path:"/property",element:<SellingPage/>},
+
     {path:"/account",element:<Account />},
     {path:"/login",element:<SignUp />},
 
@@ -34,9 +41,6 @@ const router= createBrowserRouter([
     {path:"/electronic",element:<ElectronicList/>},
     {path:"/fitness" ,element:<FittnessList/>},
     {path:"/bicycle",element:<BicycleList/>}
-    
-
-
     
   ]  
 }
