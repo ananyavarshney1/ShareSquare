@@ -4,23 +4,55 @@
 }
 .MainText
 {
+    
     position: relative;
     width: fit-content;
      /* top: -20rem; */
     /* left: 33rem;  */
-    color: whitesmoke;
+    /* color:black; */
+    color: white;
 }
 .maintextp{
+    height: 9rem;
+    width: 52rem;
+    border: black solid 2px;
+    border-radius: 10px;
+    border-style: outset;
     position: relative;
     display: flex;
     /* justify-content: center; */
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     /* border: white solid 2px; */
     /* width: 75%; */
     /* align-self: center; */
     top:-20rem;
+    left: 20rem;
+    backdrop-filter: 200px;
+    z-index: 3;
+    backdrop-filter: blur(2px);
+    /* background-color: rgba(255, 255, 255, 0.749); */
+    /* background-color: #dea472; */
+    /* opacity:0.6; */
+    text-shadow: 2px 2px 4px rgba(0.5, 0.5, 0.5, 0.5);
+    
+    -webkit-text-stroke-width: 1px;
+    /* -webkit-text-stroke-color: white; */
+    background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+background-image: linear-gradient(to right, #ff9966, #ff5e62);
+background-image: linear-gradient(to right, #ff9966, #ff5e62);
+-webkit-background-clip: text;
+color: transparent;
+font-size: 1.2em;
+/* background: rgba(255, 255, 255, 0.249); */
+/* animation: glow 1.5s ease-in-out infinite alternate; */
+font-family: 'Arial', sans-serif;
+    
 }
+
 .nameof{
     color: #ca6c19;
     font-weight: bolder;

@@ -10,7 +10,7 @@ const BootstrapCarousel = () => {
           className="d-block w-100"
           src="src\assets\mainimg.webp"
           alt="First slide"
-          style={{ maxHeight: '500px', objectFit: 'cover' }}
+          style={{ maxHeight: '500px', objectFit: 'cover'}}
         />
         {/* <Carousel.Caption>
           <h3>Slide 1</h3>
@@ -22,7 +22,7 @@ const BootstrapCarousel = () => {
           className="d-block w-100"
           src="src\assets\mainimg.jpg"
           alt="Second slide"
-          style={{ maxHeight: '500px', objectFit: 'cover' }}
+          style={{ maxHeight: '500px', objectFit: 'cover', }}
         />
 
         {/* <Carousel.Caption>
@@ -35,7 +35,7 @@ const BootstrapCarousel = () => {
           className="cycle d-block w-100"
           src="src\assets\cycle.webp"
           alt="Third slide"
-          style={{ maxHeight: '500px', objectFit: 'cover' }}
+          style={{ maxHeight: '500px', objectFit: 'cover', }}
         />
 
         {/* <Carousel.Caption>
