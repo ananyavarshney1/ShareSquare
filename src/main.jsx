@@ -21,12 +21,14 @@ import SellingPage from './SellingPage/sellingPage.jsx'
 import Bed from './RentingProducts/bed.jsx'
 import WashingMachine from './RentingProducts/WashingMachine.jsx'
 
+import { ToastContainer } from 'react-toastify'
 
 const router= createBrowserRouter([
  
 {
   path:"/",
   element:<Layout />,
+  
   children:[
     {path:"", element:<App/>},
     {path:"/home", element:<App/>}, 
