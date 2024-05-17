@@ -20,7 +20,7 @@ import ContactUs from './ContactUs/ContactUs.jsx'
 
 import ElectronicList from './Productpages/EletronicList.jsx'
 import FittnessList from './Productpages/FitnessList.jsx'
-
+import SellingPage from './SellingPage/sellingPage.jsx'
 
 const router= createBrowserRouter([
  
@@ -32,7 +32,7 @@ const router= createBrowserRouter([
     {path:"/home", element:<App/>}, 
     {path:"/aboutus",element:< About/>},
     {path:"/contactus", element:<ContactUs/>},
-    {path:"/property",element:<SellingPage/>},
+    {path:"/property",element:<SellingPage />},
 
     {path:"/account",element:<Account />},
     {path:"/login",element:<SignUp />},
