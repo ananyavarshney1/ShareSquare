@@ -15,12 +15,12 @@ import BicycleList from './Productpages/BicycleList.jsx'
 import ContactUs from './ContactUs/ContactUs.jsx'
 
 
-
-
-
 import ElectronicList from './Productpages/EletronicList.jsx'
 import FittnessList from './Productpages/FitnessList.jsx'
 import SellingPage from './SellingPage/sellingPage.jsx'
+import Bed from './RentingProducts/bed.jsx'
+import WashingMachine from './RentingProducts/WashingMachine.jsx'
+
 
 const router= createBrowserRouter([
  
@@ -36,6 +36,9 @@ const router= createBrowserRouter([
 
     {path:"/account",element:<Account />},
     {path:"/login",element:<SignUp />},
+
+    {path:"/bed",element:<Bed />},
+    {path:"/wash",element:<WashingMachine />},
 
     {path:"/furniture",element:< FurnitureList/>},
     {path:"/appliances",element:<ApplianceList/>},

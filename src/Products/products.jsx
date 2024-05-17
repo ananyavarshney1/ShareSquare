@@ -10,39 +10,49 @@ import television from "../assets/television.png"
 import treadmill from "../assets/treadmill.png"
 import tv from "../assets/tv.jpg"
 import speaker from "../assets/speaker.jpg"
+import { Link,NavLink } from "react-router-dom"
+
 const images = [
   {
     img:bed,
-    title: "Bed"
+    title: "Bed",
+    connect:"/bed"
   },
   {
     img: bicycle,
-    title: "Bicycle"
+    title: "Bicycle",
+    connect:"/"
   },
   {
     img: sofa,
-    title: "Washing Machine"
+    title: "Washing Machine",
+    connect:"/wash"
   },
   {
     img: table,
-    title: "Table"
+    title: "Table",
+    connect:"/"
   },
 //   101 103 119 guest launge 121 cafe 108 110 128
   {
     img: television,
-    title: "Television"
+    title: "Television",
+    connect:"/"
   },
   {
     img: treadmill,
-    title: "Treadmill"
+    title: "Treadmill",
+    connect:"/"
   },
   {
     img: dumbells,
-    title: "Dumbells"
+    title: "Dumbells",
+    connect:"/"
   },
   {
     img: speaker,
-    title: "Speaker"
+    title: "Speaker",
+    connect:"/"
   }
 ];
 
@@ -56,8 +66,10 @@ const Products = () => {
         <div className="op">
           {images.map((image) => (
             <div key={image.title} className="w-full relative">
-              <h1 className="equipTitle">{image.title}</h1>
-              <img className="equipImg" src={image.img} alt=""/>
+            <NavLink to={image.connect}>
+            <h1 className="equipTitle">{image.title}</h1>
+            <img className="equipImg" src={image.img} alt=""/>
+            </NavLink>
             </div>
           ))}
         </div>
