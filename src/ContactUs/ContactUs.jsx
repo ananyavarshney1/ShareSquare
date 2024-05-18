@@ -44,12 +44,12 @@ const ContactUs = () => {
     };
 
     return (
-        <div className="formclass">
+        <div className="formclass1">
             <div className="space"></div>
-            <div className="forms">
+            <div className="forms1">
                 <h1>Contact Us</h1>
                 <p>How can we help you..</p>
-                <div className="miniform">
+                <div className="miniform1">
                     <form onSubmit={handleSubmit}>
                         <label htmlFor="name">Name</label>
                         <input

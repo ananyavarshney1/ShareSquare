@@ -62,6 +62,7 @@ const Login = () => {
               type='email'
               value={email}
               onChange={handleEmailChange}
+              placeholder='Enter your email'
               required
             />
           </div>
@@ -71,11 +72,12 @@ const Login = () => {
               type='password'
               value={password}
               onChange={handlePasswordChange}
+              placeholder='Enter your password'
               required
             />
           </div>
           <div className='ab'>
-          <button type='submit'>Login</button>
+            <button type='submit'>Login</button>
           </div>
         </form>
       </div>

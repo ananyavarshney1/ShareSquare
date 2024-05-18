@@ -1,26 +1,26 @@
-/* Container styling */
+/* login.css */
+
+/* Container Styling */
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  
-  font-family: 'Arial', sans-serif;
+  /* height: 100vh; */
+  /* background-color: #f0f2f5; Light background color */
 }
 
-/* Content box styling */
+/* Content Box Styling */
 .login-content {
+  width: 400px; /* Width of the login form */
   margin-top: 10rem;
-  height: auto;
-  width: 400px;
   padding: 40px;
   border-radius: 12px;
-  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Gradient background */
   box-shadow: 10px 10px 20px #d9d9d9,
-              -10px -10px 20px #ffffff;
+              -10px -10px 20px #ffffff; /* Soft shadow */
 }
 
-/* Heading styling */
+/* Heading Styling */
 .login-content h2 {
   text-align: center;
   color: #444;
@@ -29,28 +29,37 @@
   font-weight: bold;
 }
 
-/* Form styling */
+/* Form Styling */
 .login-content form {
   display: flex;
   flex-direction: column;
 }
 
-/* Input styling */
-.login-content form input {
-  padding: 15px;
+/* Label Styling */
+.login-content label {
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 5px; /* Added margin bottom for better spacing */
+}
+
+/* Input Styling */
+.login-content input[type='email'],
+.login-content input[type='password'] {
+  width: 100%;
   margin-bottom: 20px;
-  border: none;
+  padding: 15px; /* Increased padding for better appearance */
+  border: 1px solid #ccc;
   border-radius: 6px;
   box-shadow: inset 5px 5px 10px #c6c6c6,
               inset -5px -5px 10px #ffffff;
   font-size: 16px;
 }
 
-/* Button styling */
-.ab button {
+/* Button Styling */
+.login-content .ab button {
   width: 100%;
-  padding: 15px;
-  background: linear-gradient(145deg, #ff8c00, #e07c00);
+  padding: 15px; /* Increased padding for better appearance */
+  background: linear-gradient(145deg, #007bff, #0056b3); /* Gradient button */
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -59,23 +68,15 @@
   transition: background 0.3s, transform 0.3s;
 }
 
-.ab button:hover {
-  background: linear-gradient(145deg, #ff9b1a, #e58900);
+.login-content .ab button:hover {
+  background: linear-gradient(145deg, #0056b3, #004599); /* Darker gradient on hover */
   transform: translateY(-2px);
 }
 
-/* Additional enhancements */
-.ab button:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(255, 140, 0, 0.5);
-}
-
-.login-content h2:after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: #ff8c00;
-  margin: 10px auto 0;
-  border-radius: 2px;
+/* Message Styling */
+.login-content .error-message {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #dc3545; /* Red color for error messages */
 }

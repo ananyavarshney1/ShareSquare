@@ -44,8 +44,8 @@
 
 /* Input Styling */
 .signup-content input[type='text'],
-input[type='email'],
-input[type='password'] {
+.signup-content input[type='email'],
+.signup-content input[type='password'] {
   width: 100%;
   margin-bottom: 20px;
   padding: 15px; /* Increased padding for better appearance */

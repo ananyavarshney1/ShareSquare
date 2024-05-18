@@ -58,6 +58,7 @@ const SignUp = () => {
             <input
               type='text'
               id='userHandle'
+              placeholder='Enter user handle'
               value={userHandle}
               onChange={(e) => setUserHandle(e.target.value)}
               required
@@ -68,6 +69,7 @@ const SignUp = () => {
             <input
               type='text'
               id='name'
+              placeholder='Enter your name'
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
@@ -78,6 +80,7 @@ const SignUp = () => {
             <input
               type='email'
               id='email'
+              placeholder='Enter your email'
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -88,6 +91,7 @@ const SignUp = () => {
             <input
               type='password'
               id='password'
+              placeholder='Enter password'
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required

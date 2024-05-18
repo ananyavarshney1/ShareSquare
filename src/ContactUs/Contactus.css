@@ -1,37 +1,37 @@
-.formclass{
+.formclass1{
     background-color:#FFBB70;
 }
-.forms {
+.forms1 {
     max-width: 35rem;   
     margin: 0 auto;
     padding: 30px;
-    /* background-color: #e8e8e8; */
+    background-color: #e8e8e8;
     border-radius:1.0rem;
     /* border:0.1rem solid black; */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.formclass h1 {
+/* .formclass h1 {
     text-decoration: underline;
     text-align: center;
     margin-bottom: 30px;
     color: #333;
-}
+} */
 
-.miniform form {
+.miniform1 form {
     background-color:rgb(242, 236, 236);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.miniform label {
+.miniform1 label {
     margin-bottom: 0px;
     font-weight: bold;
 }
 
-.miniform input[type="text"],
-.miniform input[type="email"],
+.miniform1 input[type="text"],
+.miniform1 input[type="email"],
 textarea {
     width: 100%;
     padding: 0.8rem;
@@ -46,7 +46,7 @@ textarea {
     resize: vertical;
 }
 
-.miniform input[type="submit"] {
+.miniform1 input[type="submit"] {
     background-color: #c7764a;
     padding: 12px 24px;
     border: none;
@@ -56,6 +56,6 @@ textarea {
     transition: background-color 0.3s;
 }
 
-.miniform input[type="submit"]:hover {
+.miniform1 input[type="submit"]:hover {
     background-color: rgb(113, 254, 113);
 }
