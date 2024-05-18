@@ -18,20 +18,20 @@
     color: #333;
 }
 
-form {
+.miniform form {
     background-color:rgb(242, 236, 236);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-label {
+.miniform label {
     margin-bottom: 0px;
     font-weight: bold;
 }
 
-input[type="text"],
-input[type="email"],
+.miniform input[type="text"],
+.miniform input[type="email"],
 textarea {
     width: 100%;
     padding: 0.8rem;
@@ -46,7 +46,7 @@ textarea {
     resize: vertical;
 }
 
-input[type="submit"] {
+.miniform input[type="submit"] {
     background-color: #c7764a;
     padding: 12px 24px;
     border: none;
@@ -56,6 +56,6 @@ input[type="submit"] {
     transition: background-color 0.3s;
 }
 
-input[type="submit"]:hover {
+.miniform input[type="submit"]:hover {
     background-color: rgb(113, 254, 113);
 }
