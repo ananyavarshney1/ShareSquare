@@ -4,6 +4,7 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import { faHeart as faSolidHeart } from '@fortawesome/free-solid-svg-icons'; 
 import boxData from '../assets/FurnitureData.json';
 import "./item.css"
+import { NavLink } from 'react-router-dom';
 
 const FurnitureList = () => {
 
@@ -54,7 +55,9 @@ const FurnitureList = () => {
               <div className="box-img">
                 <img src={box.image} alt={box.name} className="box-image" />
                 
+                <NavLink to={box.connect}>
                 <button className="view-button">View</button>
+                </NavLink>
                
                 <FontAwesomeIcon
                   icon={likedBoxes[index] ? faSolidHeart : faHeart}
