@@ -1,4 +1,5 @@
 import './sellingPage.css'
+import { NavLink } from 'react-router-dom';
 
 import React, { useState } from 'react';
 
@@ -50,6 +51,11 @@ const SellingPage = () => {
     return (
         <div className="sells">
             <div className="space"></div>
+            <div className="mysellings" id="mysellings">
+                <NavLink to="/myproducts">
+                <button>My Products</button>
+                </NavLink>
+            </div>
             <div className="sellContainer">
             <label htmlFor="category">Choose the Category of Product you want to Sell:</label>
             <select id="category" onChange={(e) => updateProductName(rows.length - 1, e.target.value)} >
@@ -146,7 +152,7 @@ const SellingPage = () => {
                 </tbody>
             </table>
 
-            <button onClick={addToCart}>Add to Cart</button>
+            <button onClick={addToCart}>Add</button>
 
             <p>
                 Explore a world of convenience and choice with our diverse range of products. High-quality items from trusted sellers. Flexible rental options to suit your needs. Secure payment options for a worry-free transaction.

@@ -45,7 +45,7 @@ const FittnessList = () => {
           height="50px"
           alt="phone"
         />
-        Fittness on rent
+        Fitness on rent
       </h1>
       <h4 className="text">Checkout our huge collection of Fittness on rent</h4>
       <div className="shop-section">

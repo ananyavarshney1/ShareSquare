@@ -21,6 +21,8 @@ import FittnessList from './Productpages/FitnessList.jsx'
 import SellingPage from './SellingPage/sellingPage.jsx'
 import Bed from './RentingProducts/bed.jsx'
 import WashingMachine from './RentingProducts/WashingMachine.jsx'
+import Beddetails from './productdetail/Beddetails.jsx'
+import Myproducts from './SellingPage/myproducts.jsx'
 
 import { ToastContainer } from 'react-toastify'
 
@@ -42,6 +44,11 @@ const router= createBrowserRouter([
     {path:"/login",element:<Login />},
     {path:"/bed",element:<Bed />},
     {path:"/wash",element:<WashingMachine />},
+
+    {path:"/beddetails",element:<Beddetails/>},
+
+    {path:"/myproducts",element:<Myproducts/>},
+
 
     {path:"/furniture",element:< FurnitureList/>},
     {path:"/appliances",element:<ApplianceList/>},
