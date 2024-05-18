@@ -37,13 +37,7 @@
     border-radius: 5%;
     cursor: pointer;
 }
-.box-img{
-    height: 300px;
-    background-size: cover;
-    margin-bottom: 1rem;
-    border-radius: 5%;
-    position: relative;
-}
+
 
 .box-content{
     margin-left:1rem;
@@ -79,7 +73,12 @@
     height: auto;
     overflow: hidden; 
     display: inline-block; 
+    height: 300px;
+    background-size: cover;
+    margin-bottom: 1rem;
+    border-radius: 5%;
   } 
+  
 
   .box-image {
     width: 100%;

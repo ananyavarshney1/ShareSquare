@@ -66,8 +66,8 @@ const Products = () => {
         <div className="op">
           {images.map((image) => (
             <div key={image.title} className="w-full relative">
-            <NavLink to={image.connect}>
-            <h1 className="equipTitle">{image.title}</h1>
+            <NavLink className="underline1" to={image.connect}>
+            <div className="equipTitle">{image.title}</div>
             <img className="equipImg" src={image.img} alt=""/>
             </NavLink>
             </div>

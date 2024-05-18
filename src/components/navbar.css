@@ -34,9 +34,9 @@
     font-weight: bold;
     
 }
-.login {
+.login1 {
     position:relative;
-
+    text-decoration: none;
 
     display: flex;
     color: black;
@@ -80,7 +80,7 @@
     justify-content: center;
     ;
 }
-.login:hover{
+.login1:hover{
     border-radius:0.5rem;
     background-color: #ffc18c;
     /* transform: scale(1.1); */

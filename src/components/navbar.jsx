@@ -18,8 +18,8 @@ function Navbar() {
           </div>
         </div>
         <div className='part2'>
-          <NavLink to='/login'>
-            <div className='login'>
+          <NavLink to='/login' className="underline1">
+            <div className='login1'>
               <img src='src\assets\login.png' alt='' className='logoimg' />
               Login{' '}
             </div>
@@ -27,7 +27,7 @@ function Navbar() {
           <div className='seperator'>
             <img src='src\assets\icons8-vertical-line-32.png' alt='' />
           </div>
-          <NavLink to='/signup'>
+          <NavLink to='/signup' className="underline1">
             <div className='signup'>
               <img src='src\assets\add-user.png' alt='' className='logoimg' />
               Sign Up

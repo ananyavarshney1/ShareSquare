@@ -60,7 +60,7 @@
 .aa button {
   width: 100%;
   padding: 15px; /* Increased padding for better appearance */
-  background: linear-gradient(145deg, #007bff, #0056b3); /* Gradient button */
+  background: linear-gradient(145deg, #f68248,#ff9966); /* Gradient button */
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -70,7 +70,7 @@
 }
 
 .aa button:hover {
-  background: linear-gradient(145deg, #0056b3, #004599); /* Darker gradient on hover */
+  background: linear-gradient(145deg, #f68248,#ff9966); /* Darker gradient on hover */
   transform: translateY(-2px);
 }
 
