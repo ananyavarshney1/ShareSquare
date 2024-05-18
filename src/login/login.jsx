@@ -1,71 +1,84 @@
-import React, { useState, useEffect } from 'react';
-import './login.css';
+import React, { useState } from 'react'
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
+import { ToastContainer, toast } from 'react-toastify' // Import ToastContainer and toast
+import 'react-toastify/dist/ReactToastify.css' // Import CSS for react-toastify
+import './login.css' // Import CSS file for styling
 
-const SignUp = () => {
-  const [isSignInActive, setIsSignInActive] = useState(false);
+const Login = () => {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [error, setError] = useState(null)
+  const navigate = useNavigate()
 
-  useEffect(() => {
-    const signUpButton = document.getElementById('signUp');
-    const signInButton = document.getElementById('logIn');
-    const container = document.getElementById('container');
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value)
+  }
 
-    const handleSignUpClick = () => {
-      container.classList.add('right-panel-active');
-    };
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value)
+  }
 
-    const handleSignInClick = () => {
-      container.classList.remove('right-panel-active');
-    };
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    try {
+      const response = await axios.post(
+        'http://localhost:8080/auth/authenticate',
+        {
+          email: email,
+          password: password,
+        }
+      )
 
-    signUpButton.addEventListener('click', handleSignUpClick);
-    signInButton.addEventListener('click', handleSignInClick);
+      console.log(response.data)
+      const token = response.data;
+      
 
-    // Cleanup function
-    return () => {
-      signUpButton.removeEventListener('click', handleSignUpClick);
-      signInButton.removeEventListener('click', handleSignInClick);
-    };
-  }, []);
+      if (response.data) {
+        localStorage.setItem('token', token) // Save JWT token to local storage
+        setError(null) // Clear any previous errors
+        toast.success('Login successful! Redirecting to home page...') // Display a success message
+        setTimeout(() => {
+          navigate('/home') // Redirect to home page after 3 seconds
+        }, 3000)
+      } else {
+        setError('Invalid email or password')
+      }
+    } catch (error) {
+      setError('An error occurred. Please try again later.')
+    }
+  }
 
   return (
-    <div className={`container ${isSignInActive ? "right-panel-active" : ""}`} id="container">
-      <div className="form-container sign-up-container">
-        <form action="#">
-          <h1>Create Account</h1>
-          <span></span>
-          <input type="text" placeholder="Name" required />
-          <input type="email" placeholder="Email" required/>
-          <input type="password" placeholder="Password" required/>
-          <input type="checkbox" />I agree to the terms and conditions 
-          <button type="submit" className='bt'>Sign Up</button>
-        </form>
-      </div>
-      <div className="form-container log-in-container">
-        <form action="#">
-          <h1>Log in</h1>
-          <span></span>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <a href="#">Forgot password ?</a>
-          <button type="submit" className='bt'>Log In</button>
-        </form>
-      </div>
-      <div className="overlay-container">
-        <div className="overlay">
-          <div className="overlay-panel overlay-left">
-            <h1>Already have an Account ?</h1>
-            <p>Great ! You can simply log in and continue</p>
-            <button className="ghost" id="logIn" >Log In</button>
+    <div className='login-container'>
+      <div className='login-content'>
+        <ToastContainer /> {/* Toast container */}
+        <h2>Login</h2>
+        <form onSubmit={handleSubmit}>
+          {error && <p className='error-message'>{error}</p>}
+          <div>
+            <label>Email:</label>
+            <input
+              type='email'
+              value={email}
+              onChange={handleEmailChange}
+              required
+            />
           </div>
-          <div className="overlay-panel overlay-right">
-            <h1>Don't have an Account ?</h1>
-            <p>No Problem Sign Up to Shop With Us</p>
-            <button className="ghost" id="signUp">Sign Up</button>
+          <div>
+            <label>Password:</label>
+            <input
+              type='password'
+              value={password}
+              onChange={handlePasswordChange}
+              required
+            />
           </div>
-        </div>
+          <button type='submit'>Login</button>
+        </form>
       </div>
     </div>
-  );
+  )
 }
 
-export default SignUp;
+export default Login

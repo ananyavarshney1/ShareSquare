@@ -6,7 +6,8 @@ import Layout from './Layout.jsx'
 import { RouterProvider,createBrowserRouter } from 'react-router-dom'
 
 import Account from './Account/account.jsx'
-import SignUp from './login/login.jsx'
+import SignUp from './login/signup.jsx'
+import Login from './login/login.jsx'
 import About from './AboutUs/Aboutus.jsx'
 import FurnitureList from './Productpages/FurnitureList.jsx'
 import ApplianceList from './Productpages/ApplianceList.jsx'
@@ -37,8 +38,8 @@ const router= createBrowserRouter([
     {path:"/property",element:<SellingPage />},
 
     {path:"/account",element:<Account />},
-    {path:"/login",element:<SignUp />},
-
+    {path:"/signup",element:<SignUp />},
+    {path:"/login",element:<Login />},
     {path:"/bed",element:<Bed />},
     {path:"/wash",element:<WashingMachine />},
 
