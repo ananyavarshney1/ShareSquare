@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import './Contactus.css';
+import { toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactUs = () => {
     const [formData, setFormData] = useState({
@@ -25,7 +27,7 @@ const ContactUs = () => {
                 body: JSON.stringify(formData)
             });
             if (response.ok) {
-                alert('Message sent successfully!');
+                toast.success("Message sent succesfully");
                 setFormData({
                     to: '',
                     subject: 'Test Email',
@@ -33,11 +35,11 @@ const ContactUs = () => {
                     name: ''
                 });
             } else {
-                alert('Failed to send message. Please try again later.');
+                toast.error("Failed to send message. Please try again later.");
             }
         } catch (error) {
             console.error('Error:', error);
-            alert('An error occurred. Please try again later.');
+            toast.warn("An error occurred. Please try again later.");
         }
     };
 
