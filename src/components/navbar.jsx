@@ -1,5 +1,5 @@
 import React from 'react'
-import login from '../assets/user.png'
+// import login from '../../public/assets/user.png'
 import './navbar.css'
 import { Link, NavLink } from 'react-router-dom'
 
@@ -20,16 +20,16 @@ function Navbar() {
         <div className='part2'>
           <NavLink to='/login' className="underline1">
             <div className='login1'>
-              <img src='src\assets\login.png' alt='' className='logoimg' />
+              <img src="/assets/login.png" alt='' className='logoimg' />
               Login{' '}
             </div>
           </NavLink>
           <div className='seperator'>
-            <img src='src\assets\icons8-vertical-line-32.png' alt='' />
+            <img src="/assets/icons8-vertical-line-32.png" alt='' />
           </div>
           <NavLink to='/signup' className="underline1">
             <div className='signup'>
-              <img src='src\assets\add-user.png' alt='' className='logoimg' />
+              <img src='/assets/add-user.png' alt='' className='logoimg' />
               Sign Up
             </div>
           </NavLink>
@@ -54,7 +54,7 @@ function Navbar() {
           <div className='profilemain'>
             <div className='profile'>
               {' '}
-              <img src='src\assets\user.png' alt='' className='user' />
+              <img src="/assets/user.png" alt='' className='user' />
             </div>
           </div>
         </NavLink>

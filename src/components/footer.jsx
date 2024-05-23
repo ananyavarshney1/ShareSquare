@@ -36,8 +36,8 @@ function Footer() {
           <div id="footer1_a4">
             <h3>NEED HELP ?</h3>
             <h5>Download app</h5>
-            <img src="src\assets\gp.jpg" alt="play" height="25%" width="100%" />
-            <img src="src\assets\ap.jpg" alt="apple" height="25%" width="100%" />
+            <img src="/assets/gp.jpg" alt="play" height="25%" width="100%" />
+            <img src="/assets/ap.jpg" alt="apple" height="25%" width="100%" />
           </div>
         </div>
 

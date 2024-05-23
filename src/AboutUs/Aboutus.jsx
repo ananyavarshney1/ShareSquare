@@ -1,6 +1,7 @@
 import "./Aboutus.css"
 
-import photo from "../assets/icon-login-12.jpg"
+// import photo from "../assets/icon-login-12.jpg"
+// import photo from "../../public/assets/icon-login-12.jpg"
 
 const About = () => {
 
@@ -20,49 +21,49 @@ const About = () => {
       <h2 style={{ textAlign: "center" }}><b>Our Team</b></h2>
       <div className="rows">
         <div className="columns" id="container1">
-          <div className="photo"><img src={photo} /></div>
+          <div className="photo"><img src="public\assets\icon-login-12.jpg" /></div>
           <h2>Ananya</h2>
           <p className="title">Member</p>
           
         </div>
         <div className="columns" id="container1">
-        <div className="photo"><img src={photo} /></div>
+        <div className="photo"><img src="public\assets\icon-login-12.jpg" /></div>
           <h2>Aditya</h2>
           <p className="title">Member</p>
         </div>
 
         <div className="columns" id="container1">
-        <div className="photo"><img src={photo} /></div>
+        <div className="photo"><img src="public\assets\icon-login-12.jpg" /></div>
           <h2>Tanishq</h2>
           <p className="title">Member</p>
         </div>
 
         <div className="columns" id="container1">
-        <div className="photo"><img src={photo} /></div>
+        <div className="photo"><img src="public\assets\icon-login-12.jpg" /></div>
           <h2>Yatin</h2>
           <p className="title">Member</p>
         </div>
 
         <div className="columns" id="container1">
-        <div className="photo"><img src={photo} /></div>
+        <div className="photo"><img src="public\assets\icon-login-12.jpg" /></div>
           <h2>Tanishk</h2>
           <p className="title">Member</p>
         </div>
 
         <div className="columns" id="container1">
-        <div className="photo"><img src={photo} /></div>
+        <div className="photo"><img src="public\assets\icon-login-12.jpg" /></div>
           <h2>Hrushikesh</h2>
           <p className="title">Member</p>
         </div>
 
         <div className="columns" id="container1">
-        <div className="photo"><img src={photo} /></div>
+        <div className="photo"><img src="public\assets\icon-login-12.jpg" /></div>
           <h2>Jagdish</h2>
           <p className="title">Member</p>
         </div>
 
         <div className="columns" id="container1">
-        <div className="photo"><img src={photo} /></div>
+        <div className="photo"><img src="public\assets\icon-login-12.jpg" /></div>
           <h2>Abhay</h2>
           <p className="title">Member</p>
         </div>

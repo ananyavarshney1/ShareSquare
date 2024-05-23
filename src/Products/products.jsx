@@ -1,15 +1,16 @@
 import React from "react";
 import "./products.css";
-import bed from "../assets/bed.png"
-import bicycle from "../assets/bicycle.png"
-import sofa from "../assets/sofa.png"
-import table from "../assets/table.jpg"
+import bed from "/assets/bed.png"
+import bicycle from "/assets/bicycle.png"
+// import bicycle from ""
+import sofa from "/assets/sofa.png"
+import table from "/assets/table.jpg"
 // import chair from "../assets/chair.png"
-import dumbells from "../assets/dumbells.jpg"
-import television from "../assets/television.png"
-import treadmill from "../assets/treadmill.png"
-import tv from "../assets/tv.jpg"
-import speaker from "../assets/speaker.jpg"
+import dumbells from "/assets/dumbells.jpg"
+import television from "/assets/television.png"
+import treadmill from "/assets/treadmill.png"
+import tv from "/assets/tv.jpg"
+import speaker from "/assets/speaker.jpg"
 import { Link,NavLink } from "react-router-dom"
 
 const images = [

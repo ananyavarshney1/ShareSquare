@@ -28,10 +28,10 @@ const Landing = () => {
             <div className='offer'>
                 <div className=''><h2>What we Offer?</h2></div>
                 <div className='specialities'>
-                    <div className='s1'> <img src="src\assets\customer-service_5677951.png" alt="" className='s1logo' /><div >24*7 Customer Support</div><div className='s1text'>We are just one call away</div></div>
-                    <div className='s1'><img src="src\assets\handshake.png" alt="" className='s1logo' /><div >Trusted Buyers/Sellers</div><div className="s1text"> Ensured safety of your experience.</div></div>
+                    <div className='s1'> <img src="/assets/customer-service_5677951.png" alt="" className='s1logo' /><div >24*7 Customer Support</div><div className='s1text'>We are just one call away</div></div>
+                    <div className='s1'><img src="/assets/handshake.png" alt="" className='s1logo' /><div >Trusted Buyers/Sellers</div><div className="s1text"> Ensured safety of your experience.</div></div>
 
-                    <div className='s1'><img src="src\assets\accept.png" alt="" className='s1logo' /><div>One click Booking</div><div className="s1text">Time saving bookings.</div> </div>
+                    <div className='s1'><img src="/assets/accept.png" alt="" className='s1logo' /><div>One click Booking</div><div className="s1text">Time saving bookings.</div> </div>
                 </div>
             </div>
 
@@ -41,35 +41,35 @@ const Landing = () => {
 
                     <NavLink className="underline1" to="/furniture">                    
                     <div id="content1_a2_1">
-                      <img src="src\assets\sofa1.png" alt="" className='category'/>
+                      <img src="/assets/sofa1.png" alt="" className='category'/>
                         <center><h4>Furniture</h4></center>
                     </div>
                     </NavLink>
                     
                     <NavLink className="underline1" to="/appliances">
                     <div id="content1_a2_2">
-                        <img src="src\assets\television1.png" alt="" className='category' />
+                        <img src="/assets/television1.png" alt="" className='category' />
                         <center><h4>Appliances</h4></center>
                     </div>
                     </NavLink>
 
                     <NavLink className="underline1" to="/electronic">
                     <div id="content1_a2_3">
-                         <img src="src\assets\laptop-computer.png" alt="" className='category' />
+                         <img src="/assets/laptop-computer.png" alt="" className='category' />
                         <center><h4>Electronics</h4></center>
                     </div>
                     </NavLink>
                     
                     <NavLink className="underline1" to="/fitness">
                     <div id="content1_a2_4">
-                       <img src="src\assets\dumbell.png" alt="" className='category' />
+                       <img src="/assets/dumbell.png" alt="" className='category' />
                         <center><h4>Fitness</h4></center>
                     </div>
                     </NavLink>
 
                     <NavLink className="underline1" to="/bicycle">
                     <div id="content1_a2_5">
-                        <img src="src\assets\bicycle1.png" alt="" className='category' />
+                        <img src="/assets/bicycle1.png" alt="" className='category' />
                         <center><h4>Bicycle</h4></center>
                     </div>
                     </NavLink>
