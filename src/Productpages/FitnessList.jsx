@@ -1,23 +1,55 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-regular-svg-icons'; 
 import { faHeart as faSolidHeart } from '@fortawesome/free-solid-svg-icons'; 
-
 import boxData from '../assets1/FittnessData.json';
-import "./item.css"
+import "./item.css";
 
-const FittnessList = () => {
-
+const FitnessList = () => {
   const [likedBoxes, setLikedBoxes] = useState(new Array(boxData.length).fill(false));
   const [showMessage, setShowMessage] = useState(false);
   const [message, setMessage] = useState('');
   const [index, setIndex] = useState(null);
 
-  const toggleLike = (index) => {
+  useEffect(() => {
+    fetchLikedBoxes();
+  }, []);
+
+  const fetchLikedBoxes = async () => {
+    try {
+      // Fetch the user's liked items from the backend and update the likedBoxes state
+      const response = await axios.get('http://localhost:8080/api/wishlist');
+      const likedItems = response.data.map(item => item.title);
+      setLikedBoxes(likedBoxes.map((box, index) => likedItems.includes(boxData[index].title)));
+    } catch (error) {
+      console.error('Error fetching liked items:', error);
+    }
+  };
+
+  const toggleLike = async (box, index) => {
     const updatedLikedBoxes = [...likedBoxes];
-    updatedLikedBoxes[index] = !updatedLikedBoxes[index];
+    const isLiked = updatedLikedBoxes[index];
+    updatedLikedBoxes[index] = !isLiked;
     setLikedBoxes(updatedLikedBoxes);
     setIndex(index);
+
+    try {
+      if (!isLiked) {
+        await axios.post('http://localhost:8080/api/wishlist/add', box);
+        setMessage('Item added to your wishlist!');
+      } else {
+        const wishlist = await axios.get('http://localhost:8080/api/wishlist');
+        const item = wishlist.data.find((item) => item.title === box.title);
+        if (item) {
+          await axios.delete(`http://localhost:8080/api/wishlist/remove/${item.id}`);
+          setMessage('Item removed from your wishlist!');
+        }
+      }
+      setShowMessage(true);
+    } catch (error) {
+      console.error('Error toggling like:', error);
+    }
   };
 
   useEffect(() => {
@@ -28,12 +60,6 @@ const FittnessList = () => {
       return () => clearTimeout(timeout);
     }
   }, [showMessage]);
-
-  useEffect(() => {
-    if (showMessage) {
-      setMessage(likedBoxes[index] ? 'Item added to your wishlist!' : 'Item removed from your wishlist!');
-    }
-  }, [likedBoxes, showMessage, index]);
 
   return (
     <div>
@@ -47,27 +73,24 @@ const FittnessList = () => {
         />
         Fitness on rent
       </h1>
-      <h4 className="text">Checkout our huge collection of Fittness on rent</h4>
+      <h4 className="text">Checkout our huge collection of fitness on rent</h4>
       <div className="shop-section">
         {boxData.map((box, index) => (
           <div key={index} className={`box${index + 1} box`}>
             <div className="box-content">
               <div className="box-img">
-                <img src={box.imageUrl} alt={box.name} className="box-image" />
+                <img src={box.imageUrl} alt={box.title} className="box-image" />
                 
-                 <button className="view-button">View</button>
+                <button className="view-button">View</button>
                
                 <FontAwesomeIcon
                   icon={likedBoxes[index] ? faSolidHeart : faHeart}
                   className="wishlist-icon"
                   style={{ color: likedBoxes[index] ? 'red' : 'black' }}
-                  onClick={() => {
-                    toggleLike(index);
-                    setShowMessage(true);
-                  }} //Pass index 
+                  onClick={() => toggleLike(box, index)}
                 />
               </div>
-              <h3 className="item-name">{box.name}</h3>
+              <h3 className="item-name">{box.title}</h3>
               <div>
                 <div className="p"><p>{box.price}</p></div>
                 <div className="p1"><p><img src="https://www.rentomojo.com/public/images/fast-delivery/fast-delivery.svg" alt="fast-delivery-icon" /> {box.deliveryTime}</p></div>
@@ -90,5 +113,4 @@ const FittnessList = () => {
   );
 }
 
-export default FittnessList;
-
+export default FitnessList;

@@ -2,6 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faBox, faHeart, faGift, faLocationDot, faWallet, faUnlockKeyhole, faFolderOpen, faHeadset, faHandHoldingDollar } from '@fortawesome/free-solid-svg-icons';
 import { faUser as farUser, faHeart as farHeart, faFolderOpen as farFolderOpen } from '@fortawesome/free-regular-svg-icons';
 import './account.css'
+import { Link } from 'react-router-dom';
+
 const Account = () => {
     return ( 
         <div className="content">
@@ -16,7 +18,7 @@ const Account = () => {
             </div>
             <div id="content1_a3">
                 <FontAwesomeIcon icon={farHeart} id="icon1" />
-                <h2>Wishlist</h2>
+                <Link style={{textDecoration:'none',color:'black'}} to='/wishlist'><h2>Wishlist</h2></Link>
             </div>
         </div>
         <div className="content2">

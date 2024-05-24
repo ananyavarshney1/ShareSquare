@@ -53,7 +53,7 @@ const FurnitureList = () => {
           <div key={index} className={`box${index + 1} box`}>
             <div className="box-content">
               <div className="box-img">
-                <img src={box.image} alt={box.name} className="box-image" />
+                <img src={box.imageUrl} alt={box.title} className="box-image" />
                 
                 <NavLink to={box.connect}>
                 <button className="view-button">View</button>
