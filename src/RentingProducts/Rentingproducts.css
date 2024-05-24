@@ -12,17 +12,26 @@
     justify-content: space-evenly;
     background-color: #fff;
 }
-.box{
-    height:400px;
+.newbox{
+    /* height:400px;
     border:2px solid rgb(230, 225, 225);
     width:370px;
     background-color: white;
     padding: 20px 0px 20px;
     margin-top: 15px;
+    border-radius: 5%; */
+    /* box-shadow:2px 2px 2px rgb(174, 170, 170); */
+
+    height:460px;
+    border:1px solid #e6e6e6;
+    width:370px;
+    background-color: white;
+    padding: 20px 0px 20px;
+    margin-top: 15px;
     border-radius: 5%;
-    box-shadow:2px 2px 2px rgb(174, 170, 170);
+    cursor: pointer;
 }
-.box:hover{
+.newbox:hover{
     scale: 1.05;
 }
 .rent-box-img{
